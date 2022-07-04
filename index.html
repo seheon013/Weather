@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Everywhere</title>
+    <link href = "style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" /> 
+
+    <!-- jQuery --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+    <!-- Select2 JS --> 
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+</head>
+
+<body>
+    <header id="aheader">
+        Weather Dashboard
+    </header>
+    <aside class ="selection">
+        <select class = "input" id="selUser" type = "text" >
+            <option value = 0> Select City</option>
+            <option value = 1>Barcelona,Spain</option>
+            <option value = 2>Berlin,Germany</option>
+            <option value = 3>Beijing,China</option>
+            <option value = 4>Cairo,Egypt</option>
+            <option value = 5>Havana,Cuba</option>
+            <option value = 6>Helsinki,Finland</option>
+            <option value = 7>Milan,Italy</option>
+            <option value = 8>Osaka,Japan</option>
+            <option value = 9>Vladivostok, Russia</option>
+            <option value = 10>Roma,Italy</option>
+        </select>
+        <input type="button" value="Search" id="but_read">
+
+    </aside>
+ 
+    <section class="cards">
+        <card id="card1">
+           
+        </card>
+        <section class ='cs'>
+            <card id="card2"> </card>
+            <card id="card3"> </card>
+            <card id="card4"> </card>
+            <card id="card5"> </card>
+        </section>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
